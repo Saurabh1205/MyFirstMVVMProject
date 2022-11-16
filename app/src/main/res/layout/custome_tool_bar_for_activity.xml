@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarforBarCode"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:background="@color/material_dynamic_primary70"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="QR Scanner"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <!-- <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="48dp"
+             android:text="Push Notification "
+             android:textColor="@color/blue"
+             android:textSize="30dp" />
+
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/imageButton"
+                 android:src="@drawable/logoorange"
+                 android:layout_below="@+id/textView2"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="42dp" />
+
+         <Button
+             android:id="@+id/buttonB1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/imageButton"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="62dp"
+             android:text="Notification" />-->
+
+        <ListView
+            android:id="@+id/List_of_Notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/imageButton"
+             android:layout_gravity="center"
+             android:src="@drawable/logoorange"
+             android:layout_below="@+id/textView2"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="42dp" />-->
+
+    </LinearLayout>
+</LinearLayout>
